@@ -12,6 +12,8 @@ app.use('/api/events', require('./routes/eventRoutes'));
 app.use('/api/pages', require('./routes/pageRoutes'));
 app.use('/api/projects', require('./routes/projectRoutes'));
 app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/users', require('./routes/userRoutes'));
+
 
 
 

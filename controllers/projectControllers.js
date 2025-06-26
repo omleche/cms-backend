@@ -42,7 +42,7 @@ exports.updateProject = async (req, res ) =>{
             runValidators: true,
         });
         if (!project) return res.status(404).json({ message: 'Project not found'});
-        res.json(projects);
+        res.json(project);
     } catch (err) {
         res.status(500).json({ message: err.message });
     }

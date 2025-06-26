@@ -17,8 +17,8 @@ router.get('/id/:id', getPageById);
 
 router.get('/', getPages);
 
-router.post('/', protect, createPage);
-router.put('/:id', protect, updatePage);
-router.delete('/:id', protect, deletePage);
+router.post('/create-page', protect, authorizeRoles('admin', 'editor'), createPage);
+router.put('/:id', protect,authorizeRoles('admin', 'editor'), updatePage);
+router.delete('/:id', protect, authorizeRoles('admin', 'editor'), deletePage);
 
 module.exports = router;

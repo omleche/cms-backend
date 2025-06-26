@@ -11,6 +11,22 @@ Built with Node.js, Express, MongoDB, JWT Auth, and Cloudinary.
 - **Media Upload**: Cloudinary
 - **Tools**: Postman, MongoDB Compass
 
+
+### 🔐 API Security and Roles
+
+- **JWT Auth** using `protect` middleware
+- **Role-based Access** using `authorizeRoles('admin', 'editor')`
+- **Profile**: 
+  - `GET /api/users/me` – returns user profile
+  - `PUT /api/users/me` – update name or email
+- **Input Validation**: Uses `express-validator` to check required fields and input safety
+
+### 👥 User Roles
+- `admin`: full access to all resources
+- `editor`: content creation and management
+- `viewer`: read-only access to dashboard data
+
+
 ## API Routes
 
 | Method | Endpoint              | Description             | Auth Required |
