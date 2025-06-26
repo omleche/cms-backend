@@ -7,8 +7,13 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true }));
 
 //Routes
-app.use ('/api/auth',requiere('./routes/authRoutes'));
-app.use('/api/projects',requiere('./routes/projectRoutes'));
+app.use('/api/blogs', require('./routes/blogRoutes'));
+app.use('/api/events', require('./routes/eventRoutes'));
+app.use('/api/pages', require('./routes/pageRoutes'));
+app.use('/api/projects', require('./routes/projectRoutes'));
+app.use('/api/auth', require('./routes/authRoutes'));
+
+
 
 
 
