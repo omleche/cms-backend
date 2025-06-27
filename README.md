@@ -10,7 +10,6 @@ A content management backend for nonprofit organizations built with **Node.js**,
 
 | Layer        | Technologies             |
 | ------------ | ------------------------ |
-| **Frontend** | React + Tailwind CSS     |
 | **Backend**  | Node.js + Express        |
 | **Database** | MongoDB (via Mongoose)   |
 | **Auth**     | JWT + bcrypt             |
