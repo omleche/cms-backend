@@ -1,6 +1,6 @@
 # NPO CMS Backend
 
-Built with Node.js, Express, MongoDB, JWT Auth, and Cloudinary.
+Built with Node.js, Express, MongoDB, JWT Auth.
 
 ## Technologies
 
@@ -8,7 +8,6 @@ Built with Node.js, Express, MongoDB, JWT Auth, and Cloudinary.
 - **Backend**: Node.js + Express
 - **Database**: MongoDB (via Mongoose)
 - **Auth**: JWT + bcrypt
-- **Media Upload**: Cloudinary
 - **Tools**: Postman, MongoDB Compass
 
 

@@ -11,11 +11,19 @@ app.use(express.json());
 
 // API Routes
 app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/team', require('./routes/teamRoutes'));
+app.use('/api/users', require('./routes/userRoutes'));
+
 app.use('/api/pages', require('./routes/pageRoutes'));
 app.use('/api/events', require('./routes/eventRoutes'));
 app.use('/api/blogs', require('./routes/blogRoutes'));
-app.use('/api/team', require('./routes/teamRoutes'));
-app.use('/api/users', require('./routes/userRoutes'));
+app.use('/api/projects', require('./routes/projectRoutes'));
+
+app.use('/api/uploads', require('./routes/fileRoutes'));
+app.use('/api/uploads', require('./routes/fileRoutes'));
+
+
+
 
 
 app.use(errorHandler);
