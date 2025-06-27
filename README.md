@@ -122,7 +122,7 @@ For frontend deployments (React), connect your repo to **Vercel** or **Netlify**
 ### 🌐 Heroku / Railway / Render (Backend)
 
 1. Push your project to GitHub
-2. Link to a platform like [Render](https://render.com), [Railway](https://railway.app), or [Heroku](https://heroku.com)
+2. Link to a platform like [Render](https://render.com), [Railway](https://railway.app), or [Heroku](https://heroku.com) (We have more options at the bottom of this read me)
 3. Set the same environment variables in their dashboard
 4. Make sure your frontend references the deployed backend URL
 
@@ -137,4 +137,23 @@ For frontend deployments (React), connect your repo to **Vercel** or **Netlify**
 
 ---
 
+# Bonus: 
+
+## Tech Nonprofit Discounts
+
+[GitHub for Good](https://github.com/social-impact) – Free GitHub Team/Pro
+
+[Google for Nonprofits](https://www.google.com/nonprofits/) – Workspace, YouTube credits
+
+[Microsoft for Nonprofits](https://nonprofit.microsoft.com/en-us/getting-started) – Azure credits
+
+[AWS Activate for Nonprofits](https://aws.amazon.com/government-education/nonprofits/?ps-events.sort-by=item.additionalFields.startDateTime&ps-events.sort-order=asc) – AWS credits for infra
+
+## 🏆 Best Tech Combinations for NPOs
+
+| Backend Platform | Frontend Platform | DB Host       | Notes                              |
+| ---------------- | ----------------- | ------------- | ---------------------------------- |
+| Railway (Free)   | Vercel (Free)     | MongoDB Atlas | Easiest setup, mostly free         |
+| Render (Free)    | Netlify (Free)    | MongoDB Atlas | Stable, nonprofit-friendly         |
+| Fly.io (Free)    | Vercel            | MongoDB Atlas | Powerful, but more technical setup |
 
