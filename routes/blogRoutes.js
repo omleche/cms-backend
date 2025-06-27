@@ -9,11 +9,38 @@ const {
 } = require('../controllers/blogController');
 
 const { protect } = require('../middleware/authMiddleware');
+const validateRequest = require('../middleware/validateRequest');
+
+
+router.post(
+  '/',
+  protect,
+  authorizeRoles('admin', 'editor'),
+  [
+    body('title').notEmpty(),
+    body('slug').notEmpty(),
+    body('content').notEmpty(),
+  ],
+  validateRequest,
+  createBlog
+);
+
+router.put(
+  '/:id',
+  protect,
+  authorizeRoles('admin', 'editor'),
+  [
+    body('title').optional().notEmpty(),
+    body('slug').optional().notEmpty(),
+    body('content').optional().notEmpty(),
+  ],
+  validateRequest,
+  updateBlog
+);
+
 
 router.get('/', getBlogs);                     // Public
-router.post('/', protect, createBlog);         // Auth required
 router.get('/:id', getBlogById);               // Public
-router.put('/:id', protect, updateBlog);       // Auth required
 router.delete('/:id', protect, deleteBlog);    // Auth required
 
 module.exports = router;
